@@ -1,0 +1,79 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600;900&display=swap');
+
+/* font-family: 'Mulish', sans-serif; */
+
+:root{
+    font-size: 62.5%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    --titulo: #02799D;
+    --sub-titulo: #E1E1E6;
+    --paragrafos: #C4C4CC;
+    --brackground: #121214;
+    --borda-card: #323238;
+    --background-card: #202024;
+}
+
+body{
+    display: grid;
+    place-content: center;
+    row-gap: 63px;
+
+    background-color: var(--brackground);
+    font-family: 'Mulish', sans-serif;
+
+    padding: 72px 104px;
+}
+
+header h1{
+    color: var(--titulo);
+    font-size: 5.8rem;
+}
+
+header p{
+    font-size: 3.2rem;
+    color: var(--sub-titulo);
+}
+
+h1, h2{
+    font-weight: 900;
+}
+
+p{
+    font-weight: 600;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+
+    column-gap: 6rem;
+    row-gap: 4.4rem;
+    /* gap: 4.4rem/6rem */
+}
+
+main h2{
+    color: var(--sub-titulo);
+    font-size: 3.6rem;
+    padding: 24px 32px 0;
+}
+
+main p{
+    color: var(--paragrafos);
+    font-size: 1.8rem;
+    padding: 24px 32px 32px;
+}
+
+.card{
+    background-color: var(--background-card);
+    border: 2px solid var(--borda-card);
+    border-radius: 8px;
+
+    overflow: hidden;
+}
